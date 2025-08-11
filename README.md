@@ -23,7 +23,6 @@ Versión **simple**: validación básica, comparación de jugadas y opción de r
 - **Flujo principal**
 - **Comparación de jugadas**
 
-*(Se encuentran en la carpeta `docs/diagrams/`)*
 
 ---
 
