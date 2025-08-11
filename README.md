@@ -13,10 +13,22 @@ Versión simple: validación básica, comparación de jugadas y opción de repet
 -Lógica de resultado: empate / gana jugador / gana PC
 -Pregunta para jugar otra vez (s / n)
 
-#Diagramas
-Flujo principal:
-<img width="421" height="512" alt="Diagrama de flujo de comparación" src="https://github.com/user-attachments/assets/3ceb86ab-65e8-40ba-85b8-a0d5f8fee462" />
+#Diagramas de flujo
+-Flujo principal
+-Comparación de jugadas
 
-Comparación de jugadas:
-<img width="538" height="1252" alt="Diagrama de flujo" src="https://github.com/user-attachments/assets/1fc653c2-2273-4ccd-a068-ac3c1f3f5ad8" />
+#Explicación breve del código
+-opciones: lista con las jugadas válidas (["piedra", "papel", "tijera"]).
+-entrada: texto que escribe el usuario; se limpia y normaliza a minúsculas.
+-elec_user: elección final del jugador en texto (a partir de 1/2/3 o palabra).
+-elec_pc: elección aleatoria de la computadora con random.choice(opciones).
+
+Comparación:
+  -Si son iguales → Empate
+  -Reglas: piedra > tijera, tijera > papel, papel > piedra
+  -Si no se cumple la regla del jugador → gana la PC
+
+#Autor
+Glemer Jair Estupiñán Valencia
+
 
